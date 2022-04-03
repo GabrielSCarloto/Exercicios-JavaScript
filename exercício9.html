@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercício 9</title>
+</head>
+<body>
+    <h1>Você pode ou não votar nas eleições de 2022?</h1>
+	<script>
+        var eleição = 2022
+        var nascimento = parseInt(prompt("Em que ano você nasceu?"))
+        
+        var idade = eleição - nascimento
+
+        if(idade>=16){
+            document.write("Você pode votar, pois você tem mais que 16 anos. Contudo, se tiver menos de 18 anos e mais que 70 anos, seu voto é facultativo.")
+        }else{
+            document.write("Você não pode votar, pois ainda não tem mais que 16 anos.")
+        }
+    </script>
+</body>
+</html>

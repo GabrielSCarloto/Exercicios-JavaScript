@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercício 7 </title>
+</head>
+<body>
+    <h1> Soma ignorando números maiores que 72 </h1>
+    <script>
+        document.write("<strong>Os números digitados foram esses:<br></strong>")
+
+        var numero1 = parseFloat(prompt("Digite o primeiro número: "))
+        var numero2 = parseFloat(prompt("Digite o segundo número: "))
+        var numero3 = parseFloat(prompt("Digite o terceiro número: "))
+        var numero4 = parseFloat(prompt("Digite o quarto número: "))
+        var numero5 = parseFloat(prompt("Digite o quinto número: "))
+        var numero6 = parseFloat(prompt("Digite o sexto número: "))
+
+        document.write("Primeiro:",numero1,"<br>")
+	    document.write("Segundo:",numero2,"<br>")
+	    document.write("Terceiro:",numero3,"<br>")
+        document.write("Quarto:",numero4,"<br>")
+	    document.write("Quinto:",numero5,"<br>")
+	    document.write("Sexto:",numero6,"<br>")
+
+        if (numero1>72) numero1 = 0
+          if (numero2>72) numero2 = 0         
+          if (numero3>72) numero3 = 0
+          if (numero4>72) numero4 = 0
+          if (numero5>72) numero5 = 0
+          if (numero6>72) numero6 = 0
+
+        var soma = numero1 + numero2 + numero3 + numero4 + numero5 + numero6
+
+        document.write("<strong>A soma desses números ignorando números maiores que 72 é: </strong>" + soma + "<br>")
+    </script>
+</body>
+</html>
